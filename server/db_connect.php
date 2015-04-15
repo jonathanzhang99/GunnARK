@@ -4,5 +4,6 @@
 		$db = $mongo->ark;
 		$accounts = $ark->accounts;
 	}
+	echo $accounts;
 	
 ?>

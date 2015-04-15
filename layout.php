@@ -1,7 +1,6 @@
-<?php
-require_once("ti.php");
-?>
+<?php require_once("ti.php");?>
 <html>
+<head>
 		<title>GunnARK | Scavenger Hunt</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
@@ -22,7 +21,8 @@ require_once("ti.php");
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-<head>
+		<link href="css/form-style.css" rel="stylesheet">
+
 </head>
 <body>
 	<div id="wrapper">
@@ -49,6 +49,14 @@ require_once("ti.php");
 		</div>
 	<?php startblock("body"); ?>
 	<?php endblock(); ?>
+
 	</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<?php startblock("javascript"); ?>
+<?php endblock(); ?>
 </body>
 </html>
