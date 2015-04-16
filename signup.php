@@ -2,7 +2,7 @@
 
 <?php startblock("body") ?>
 	<div class="container-fluid">
-		<div class="confirmation unconfirmed">
+		<div class="unconfirmed confirmation ">
 			<h1>Congratulations, you are registered!</h1>
 		</div>
 		<div class="form-style">

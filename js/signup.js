@@ -64,8 +64,9 @@ function send_signup_data(){
 		data: aggregate_data(),
 		url: "server/create_user.php",
 		dataType: "text",
-		done: function(response) {
-			console.log(response);
+		success: function() {
+			$(".confirmation").slideDown("slow", function() {setTimeout(function() {$(".confirmation").slideUp("slow");}, 2500);});
+
 		}
 	});
 }

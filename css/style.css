@@ -53,10 +53,15 @@ img {
 	color: darkgrey;
 }
 
-.unconfirmed {
-	display: none;
-}
+
 .confirmation {
+	display: none;
+	margin: 0 auto;
+	vertical-align: middle;
+	text-align: center;
+
+	color: rgb(44, 187, 187);
+
 
 }
 /* keyframes */
