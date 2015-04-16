@@ -2,8 +2,8 @@
 	$mongo = new MongoClient("mongodb://localhost");
 	if ($mongo){
 		$db = $mongo->ark;
-		$accounts = $ark->accounts;
+		$accounts = $db->accounts;
 	}
-	echo $accounts;
+
 	
 ?>

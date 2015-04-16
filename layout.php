@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 		<meta name="generator" content="GunnARK" />
 
+
 		<!--Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
@@ -23,9 +24,12 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/form-style.css" rel="stylesheet">
 
+		<link rel="icon" type="image/png" href="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_64,w_64/crgbisrrljp4nkrwdlv2.png">
+
 </head>
 <body>
 	<div id="wrapper">
+		<!--
 		<div class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -47,6 +51,7 @@
 				</div>
 			</div>
 		</div>
+	-->
 	<?php startblock("body"); ?>
 	<?php endblock(); ?>
 

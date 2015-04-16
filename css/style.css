@@ -1,4 +1,49 @@
+body {
+
+    font-family: 'Open Sans Condensed', Helvetica;
+    font-size: 18px;
+    font-weight:100;
+    color:#333;
+   	background-color: #eee;
+
+}
+div {
+	padding: 10px 0;
+}
+img {
+	display:block;
+	margin: 0 auto;
+	max-height: 20em;
+	width: auto;
+}
+.full-screen {
+	min-height: 100%;
+}
+.banner {
+	padding: 0 100px;
+}
+.banner p {
+	font-size: 40px;
+	word-spacing: 40px;
+	text-align: center;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+.signup {
+	text-align: center;
+}
+.signup a {
+	font-size: 14px;
+	border-color: rgb(196, 156, 66);
+	background-color: #eee;
+}
+
+
 /* signup.php */
+
 .info-member {
 	padding-left: 25px;
 	display: none;
