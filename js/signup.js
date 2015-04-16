@@ -65,8 +65,7 @@ function send_signup_data(){
 		url: "server/create_user.php",
 		dataType: "text",
 		success: function() {
-			$(".confirmation").slideDown("slow", function() {setTimeout(function() {$(".confirmation").slideUp("slow");}, 2500);});
-
+			document.location.href = www.gunnark.org;
 		}
 	});
 }
