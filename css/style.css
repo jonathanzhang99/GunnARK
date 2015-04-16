@@ -53,6 +53,12 @@ img {
 	color: darkgrey;
 }
 
+.unconfirmed {
+	display: none;
+}
+.confirmation {
+
+}
 /* keyframes */
 
 @keyframes fadeInRight {
