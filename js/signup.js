@@ -40,8 +40,12 @@ $(function() {
 	$("select").change(function(){
 		$(this).removeClass("placeholder");
 	});
+
+	
 	$("#scavenger_submit").click(function(){
+		console.log("clicked");
 		send_signup_data();
+		document.location.href = "/";
 	});
 
 
@@ -64,9 +68,7 @@ function send_signup_data(){
 		data: aggregate_data(),
 		url: "server/create_user.php",
 		dataType: "text",
-		success: function() {
-			document.location.href = www.gunnark.org;
-		}
+
 	});
 }
 

@@ -7,7 +7,7 @@
 		</div>
 		<div class="form-style">
 			<h2>ARK Kindness Scavenger Hunt Signup</h2>
-			<form role="form">
+			<form role="form" action="/">
 				<div class="form-group">
 				
 					<input type="text" id="team-name" placeholder="Team Name">
@@ -54,7 +54,7 @@
 -->
 					</div>
 				</div>
-				<input type="submit" id="scavenger_submit">
+				<input type="submit" id="scavenger_submit" >
 				
 			</form>
 		</div>
