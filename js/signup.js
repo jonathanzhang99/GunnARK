@@ -1,5 +1,17 @@
 $(function() {
 
+	// 'use strict';
+	// var $body = $('html, body'),
+	// 	content = $('#main').smoothState({
+	// 		onStart: {
+	// 			duration: 250,
+	// 			render :function() {
+	// 				content.toggleAnimationClass('is-exiting');
+	// 				$body.animate({'scrollTop': 0});
+	// 			}
+	// 		}
+	// 	}).data('smoothState');
+
 	$("#member-1").keyup(function(){
 
 		if ( $("#member-1").val() !== "" ){
@@ -42,7 +54,7 @@ function aggregate_data(){
 	$("select").each(function(){
 		jsonForm[$(this).attr("id")] = $(this).val();
 	});
-	console.log(jsonForm);
+
 	return jsonForm;
 }
 

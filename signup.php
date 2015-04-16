@@ -2,6 +2,9 @@
 
 <?php startblock("body") ?>
 	<div class="container-fluid">
+		<div class="confirmation">
+			<h1>Congratulations, you are registered!</h1>
+		</div>
 		<div class="form-style">
 			<h2>ARK Kindness Scavenger Hunt Signup</h2>
 			<form role="form">
@@ -19,6 +22,7 @@
 							<option value="Junior">Junior</option>
 							<option value="Senior">Senior</option>
 						</select>
+<!--						
 						<select id="shirt-member-1" class="placeholder">
 							<option value=""  disabled selected style="display:none;">Select Your Shirt Size</options>
 							<option value="Freshman">Small</option>
@@ -26,6 +30,7 @@
 							<option value="Junior">Large</option>
 							<option value="Senior">X-Large</option>
 						</select>
+-->
 						
 					</div>
 					<input type="text" id="member-2" placeholder="Team Member 2 (optional)">
@@ -38,6 +43,7 @@
 							<option value="Junior">Junior</option>
 							<option value="Senior">Senior</option>
 						</select>
+<!--
 						<select id="shirt-member-2" class="placeholder" >
 							<option value=""  disabled selected style="display:none;">Select Your Shirt Size</options>
 							<option value="Small">Small</option>
@@ -45,6 +51,7 @@
 							<option value="Large">Large</option>
 							<option value="X-Large">X-Large</option>
 						</select>
+-->
 					</div>
 				</div>
 				<input type="submit" id="scavenger_submit">
