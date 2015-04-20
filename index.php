@@ -13,7 +13,7 @@
 			</div>
 			<div class="faded signup">
 				<a href="signup.php" class="btn btn-default" id="scavenger-signup">Signup for the Kindness Scavenger Hunt</a>
-				<!-- <a href="login.php" class="btn btn-default">Login</a> -->
+				<a href="login.php" class="btn btn-default">Login</a>
 			</div>
 
 				

@@ -12,7 +12,7 @@
 				<input type="text" id="login_email" placeholder="Email">
 				<input type="password" id="login_password" placeholder= "Password (shared)">
 			</div>
-			<input type="button" id="login_submit">
+			<input type="button" id="login_submit" value="Login">
 		</form>
 	</div>
 </div>
