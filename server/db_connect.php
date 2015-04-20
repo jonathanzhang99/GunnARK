@@ -1,5 +1,5 @@
 <?php
-	$mongo = new MongoClient("mongodb://localhost");
+	$mongo = new MongoClient();
 	if ($mongo){
 		$db = $mongo->ark;
 		$accounts = $db->accounts;

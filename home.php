@@ -4,6 +4,7 @@ if (empty($_SESSION['user_login'])){
 	header("Location: ./");
 
 }
+require_once('server/db_connect.php');
 $points = $_SESSION["total_points"];
 $tiers = array(
 	$_SESSION["tier_1"],
@@ -19,7 +20,6 @@ foreach ($tiers as $value){
 	$tier_completion[] = substr_count($tiers, '1');
 }
 
-require_once('db_connect.php');
 include "layout.php"	
 ?>
 
