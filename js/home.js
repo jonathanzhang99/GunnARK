@@ -11,6 +11,7 @@ $(function() {
 				data: activity_data,
 				url: "server/activity_process.php",
 				success: function(resp){
+					console.log(resp);
 					if (resp !== 0){
 						location.reload();
 					}
