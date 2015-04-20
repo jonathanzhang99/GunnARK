@@ -60,4 +60,8 @@ include "layout.php"
 </div>
 <?php endblock() ?>
 
+<?php startblock("javascript") ?>
+<script src="js/home.js" type="text/javascript"></script>
+<?php endblock() ?>
+
 				
