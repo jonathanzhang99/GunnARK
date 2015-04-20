@@ -18,20 +18,17 @@ $points = $activity["points"];
 if (password_verify($check, $hash)){
 	$record = $account['tier_'.$tier];
 	$record[$completed] = '1';
-	$query = array(
-		array(
-			"team_name"=>$team_name
-			), 
-		array(
+	$query = array("team_name"=>$team_name);
+	$changes =array(
 			'$set'=>array(
 				'tier_'.$tier=>$record
 				),  
 			'$inc'=>array(
 				'total_points'=>$points
 				)
-			)
-		);
-	$accounts->update($query);
+			);
+		
+	$accounts->update($query, $changes);
 	echo 1;
 	exit;
 }

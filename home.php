@@ -31,7 +31,7 @@ include "layout.php"
 		<h2>Points: <?php echo $points ?></h2>
 	</div>
 	<div class="welcome">
-		<h1>Welcome <?php echo $team; ?></h1>
+		<h1>Team <?php echo $team; ?></h1>
 	</div>
 	<div class="tiers" id="tier_1">
 	<?php 
