@@ -32,6 +32,12 @@ if (password_verify($check, $hash)){
 			)
 		);
 	$accounts->update($query);
+	echo 1;
+	exit;
+}
+else {
+	echo 0;
+	exit;
 }
 
 
