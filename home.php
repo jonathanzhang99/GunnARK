@@ -27,7 +27,22 @@ include "layout.php"
 
 <div class="container-fluid">
 	<div class="tiers" id="tier_1">
-
+	<?php 
+		$tier_1 = str_split($tiers[0]);
+		$query = array("tier"=>1);
+		$first = $activities->findOne($query);
+		foreach ($tier_1 as $key => $value){
+			if ($value == "1" && $key < 10){
+			$content = $first[$key];
+			$hashed = password_hash(substr($content, 0, 5) . 'eee'); 
+	?>	
+		<div>
+			<h2> <?php echo $first[$key] ?></h2>
+		</div>
+	<?php
+			}
+		}
+	?>
 	</div>
 
 </div>
