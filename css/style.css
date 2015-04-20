@@ -32,13 +32,17 @@ img {
 	float: none;
 	margin: 0 auto;
 }
-.signup {
+.signup .login {
 	text-align: center;
-}
+}	
 .signup a {
 	font-size: 14px;
 	border-color: rgb(196, 156, 66);
 	background-color: #eee;
+	margin: 0 10px;
+}
+.incomplete {
+	border-color: red;
 }
 
 
