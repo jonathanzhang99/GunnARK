@@ -9,7 +9,7 @@ if (empty($_POST)) {
 if (isset($_POST["email"]) && isset($_POST["password"])){
 	$email = $_POST["email"];
 	$password = $_POST["password"];
-	$query = array("$or" => array(
+	$query = array('$or' => array(
 		array("email_member_1" => $email), 
 		array("email_member_2"=>$email)
 		)
