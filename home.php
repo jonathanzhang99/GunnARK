@@ -38,7 +38,6 @@ include "layout.php"
 	?>
 		<div>
 			<h2> <?php echo $first[$key] ?></h2>
-			<a class="btn btn-default activity-submit" data-value="<?php echo htmlspecialchars($hashed) ?>">Finished!</a>
 		</div>
 	<?php
 			}
