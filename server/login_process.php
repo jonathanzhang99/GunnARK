@@ -2,7 +2,7 @@
 session_start();
 require_once("db_connect.php");
 if (empty($_POST)) {
-	header("Location: ./");
+	header("Location: ../");
 	exit;
 }
 
@@ -16,7 +16,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
 	);
 	$account = $accounts->findOne($query);
 	if ($account) {
-		if (password_verify($password, $account['password'])) {
+		if (password_verify($password, $account['team_password'])) {
 			$_SESSION['user_login'] = $email;
 			$_SESSION['team_name'] = $account["team_name"];
 			$_SESSION['name_member_1'] = $account["name_member_1"];
