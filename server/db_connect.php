@@ -3,7 +3,7 @@
 	if ($mongo){
 		$db = $mongo->ark;
 		$accounts = $db->accounts;
-		$activites = $db->tiers;
+		$activities= $db->tiers;
  	}
 
 	
