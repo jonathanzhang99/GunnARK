@@ -36,16 +36,16 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
 
 		
 	} else {
-		echo 0;
+		echo "password wrong";
 		exit;
 	}
 
 }else {
-	echo 0;
+	echo "account not found";
 	exit;
 }
 } else {
-	echo 0;
+	echo "empty request";
 	exit;
 }
 
