@@ -3,3 +3,4 @@ $(function() {
 	$(".faded").eq(1).hide().fadeIn(2500);
 
 });
+

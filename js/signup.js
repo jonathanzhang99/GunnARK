@@ -41,15 +41,20 @@ $(function() {
 		$(this).removeClass("placeholder");
 	});
 
-	
+
 	$("#scavenger_submit").click(function(){
 		console.log("clicked");
+		
 		send_signup_data();
 		document.location.href = "/";
 	});
 
 
 });
+
+function validate(){
+	
+}
 function aggregate_data(){
 	jsonForm = {};
 	$("input").each(function(){
@@ -71,4 +76,5 @@ function send_signup_data(){
 
 	});
 }
+
 
