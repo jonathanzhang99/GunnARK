@@ -24,11 +24,11 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
 			$_SESSION['grade_member_1'] = $account["grade_member_1"];
 			$_SESSION['grade_member_2'] = $account["grade_member_2"];
 			$_SESSION['total_points'] = $account["total_points"];
-			$_SESSION['tier1'] = $account['tier1'];
-			$_SESSION['tier2'] = $account['tier2'];
-			$_SESSION['tier3'] = $account['tier3'];
-			$_SESSION['tier4'] = $account['tier4'];
-			$_SESSION['tier5'] = $account['tier5'];
+			$_SESSION['tier_1'] = $account['tier_1'];
+			$_SESSION['tier_2'] = $account['tier_2'];
+			$_SESSION['tier_3'] = $account['tier_3'];
+			$_SESSION['tier_4'] = $account['tier_4'];
+			$_SESSION['tier_5'] = $account['tier_5'];
 			echo 1;
 			exit; 
 

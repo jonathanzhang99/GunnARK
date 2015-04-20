@@ -17,7 +17,7 @@ $tiers = array(
 
 $tier_completion = array();
 foreach ($tiers as $value){
-	$tier_completion[] = substr_count($tiers, '1');
+	$tier_completion[] = substr_count($value, '1');
 }
 
 include "layout.php"	
