@@ -21,9 +21,12 @@ function send_login_data(){
 		dataType: "text",
 		success: function(data) {
 			console.log(data);
-			if (data !== 0) {
-				window.location.href = "home.php";
-			}
+			// if (data !== 0) {
+			// 	window.location.href = "home.php";
+			// }
+			// else {
+			// 	console.log("something is wrong");
+			// }
 		}
 
 	});
