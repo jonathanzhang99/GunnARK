@@ -49,7 +49,7 @@ include "layout.php"
 	?>
 		<div class="form-style">
 			<h2> <?php echo $first[$key] ?></h2>
-			<?php echo "<button class='btn btn-default activity-submit' data-tier='".1."'data-number='".$key."' data-value='".$hashed."'>Finished</button>"; ?>
+			<?php echo "<button class='btn btn-default activity-submit' data-tier='".'1'."'data-number='".$key."' data-value='".$hashed."'>Finished</button>"; ?>
 		</div>
 	<?php
 			}
