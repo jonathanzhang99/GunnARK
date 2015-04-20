@@ -18,7 +18,13 @@ function send_login_data(){
 		type: "POST",
 		data: login_data,
 		url: "server/login_process.php",
-		dataType: "text"
+		dataType: "text",
+		success: function(data) {
+			console.log(data);
+			if (data !== 0) {
+				window.location.href = "home.php";
+			}
+		}
 
 	});
 }

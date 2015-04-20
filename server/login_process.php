@@ -41,11 +41,11 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
 	}
 
 }else {
-	echo "Invalid Password or Username";
+	echo 0;
 	exit;
 }
 } else {
-	echo "Invalid Password or Username";
+	echo 0;
 	exit;
 }
 
