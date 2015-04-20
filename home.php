@@ -34,17 +34,17 @@ include "layout.php"
 		$first = $activities->findOne($query);
 		foreach ($tier_1 as $key => $value){
 			$content = $first[$key];
-			$hashed = password_hash(substr($content, 0, 5) . 'eee');
+			$hashed = password_hash(substr($content, 0, 5) . 'eee', PASSWORD_DEFAULT);
 			if ($value == "1"){
 	?>	
-		<div>
+		<div class="form-style">
 			<h2> <?php echo $first[$key] ?></h2>
 		</div>
 	<?php
 			}
 			else {
 	?>
-		<div>
+		<div class="form-style">
 			<h2> <?php echo $first[$key] ?></h2>
 			<?php echo "<button class='btn btn-default activity-submit' data-value='".$hashed."'>Finished</button>"; ?>
 		</div>
