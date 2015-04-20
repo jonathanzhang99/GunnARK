@@ -6,6 +6,7 @@ if (empty($_SESSION['user_login'])){
 }
 require_once('server/db_connect.php');
 $points = $_SESSION["total_points"];
+$team = $_SESSION["team_name"];
 $tiers = array(
 	$_SESSION["tier_1"],
 	$_SESSION["tier_2"],
@@ -28,6 +29,9 @@ include "layout.php"
 <div class="container-fluid">
 	<div class="points">
 		<h2>Points: <?php echo $points ?></h2>
+	</div>
+	<div class="welcome">
+		<h1>Welcome <?php echo $team; ?></h1>
 	</div>
 	<div class="tiers" id="tier_1">
 	<?php 
