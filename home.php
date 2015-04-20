@@ -26,6 +26,9 @@ include "layout.php"
 <?php startblock("body") ?>
 
 <div class="container-fluid">
+	<div class="points">
+		<h2>Points: <?php echo $points ?></h2>
+	</div>
 	<div class="tiers" id="tier_1">
 	<?php 
 		$tier_1 = str_split($tiers[0]);
@@ -42,11 +45,11 @@ include "layout.php"
 		</div>
 	<?php
 			}
-			else {
+			else if ($key < 10) {
 	?>
 		<div class="form-style">
 			<h2> <?php echo $first[$key] ?></h2>
-			<?php echo "<button class='btn btn-default activity-submit' data-value='".$hashed."'>Finished</button>"; ?>
+			<?php echo "<button class='btn btn-default activity-submit' data-tier='".1."'data-number='".$key."' data-value='".$hashed."'>Finished</button>"; ?>
 		</div>
 	<?php
 			}
