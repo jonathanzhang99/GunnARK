@@ -13,7 +13,8 @@ $(function() {
 				success: function(resp){
 					console.log(resp);
 					if (resp !== 0){
-						location.reload();
+						$(".points h2").text(resp);
+						$("button[data-value=" + activity_data["hash"] + "]" ).remove();
 					}
 				}
 

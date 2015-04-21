@@ -17,6 +17,10 @@ $points = $activity["points"];
 
 if (password_verify($check, $hash)){
 	$record = $account['tier_'.$tier];
+	if ($record[$completed] == '1'){
+		echo 0;
+		exit;
+	}
 	$record[$completed] = '1';
 	$query = array("team_name"=>$team_name);
 	$changes =array(
@@ -29,7 +33,9 @@ if (password_verify($check, $hash)){
 			);
 		
 	$accounts->update($query, $changes);
-	echo 1;
+	$new_points = $account["total_points"];
+	$_SESSION['total_points'] = $new_points;
+	echo $new_points;
 	exit;
 }
 else {
