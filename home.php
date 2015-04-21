@@ -66,7 +66,7 @@ include "layout.php"
 			if ($value > 7){
 				$tier = $key + 2;
 				echo "<div class='tiers' id='tier_".$tier."'>";
-				$tier_record = str_split($tiers[$tier]);
+				$tier_record = str_split($tiers[$tier-1]);
 				$query = array("tier"=>$tier);
 				$tier_activities = $activities->findOne($query);
 				foreach ($tier_record as $i => $j){
