@@ -27,6 +27,7 @@ include "layout.php"
 <?php startblock("body") ?>
 
 <div class="container-fluid">
+	<button class="btn btn-default" href="server/logout_process.php" id="logout">Logout</button>
 	<div class="points">
 		<h2>Points: <?php echo $points ?></h2>
 	</div>

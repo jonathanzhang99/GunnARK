@@ -35,7 +35,7 @@ if (password_verify($check, $hash)){
 	$accounts->update($query, $changes);
 	$new_points = $account["total_points"];
 	$_SESSION['total_points'] = $new_points;
-	echo $new_points;
+	echo $new_points + $points; //asynchronous process 
 	exit;
 }
 else {
