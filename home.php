@@ -73,7 +73,7 @@ include "layout.php"
 					if (isset($tier_activities[$i])){
 					$content = $tier_activities[$i];
 					$hashed = password_hash(substr($content, 0, 5).'eee', PASSWORD_DEFAULT);
-					if ($j == 1){
+					if ($j == "1"){
 	?>
 				<div class="form-style">
 					<h2><?php echo $tier_activities[$i] ?></h2>
