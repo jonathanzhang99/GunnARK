@@ -61,6 +61,47 @@ include "layout.php"
 		}
 	?>
 	</div>
+	<?php
+		foreach($tier_completion as $key => $value){
+			if ($value > 7){
+				$tier = $key + 2;
+				echo "<div class='tiers' id='tier_".$tier."'>";
+				$tier_record = str_split($tiers[$key]);
+				$query = array("tier"=>$tier);
+				$tier_activities = $activities->findOne($query);
+				foreach ($tier_record as $i => $j){
+					if (isset($tier_activities[$i])){
+					$content = $tier_activities[$i];
+					$hashed = password_hash(substr($content, 0, 5).'eee', PASSWORD_DEFAULT);
+					if ($j == 1){
+	?>
+				<div class="form-style">
+					<h2><?php echo $tier_activities[$i] ?></h2>
+				</div>
+	<?php
+					}
+					else{
+	?>
+				<div class="form-style">
+					<h2><?php echo $tier_activities[$i] ?></h2>
+					<?php echo "<button class='btn btn_default activity-submit' data-tier='$tier' data-number='$key' data-value='$hashed'>Finished</butonn>"; ?>
+				</div>
+	<?php
+					}
+				}
+			}
+
+
+				echo "</div>";
+
+				
+			}else {
+				break;
+			}
+		}
+
+
+	?>
 
 </div>
 <?php endblock() ?>
