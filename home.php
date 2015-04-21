@@ -84,7 +84,7 @@ include "layout.php"
 	?>
 				<div class="form-style">
 					<h2><?php echo $tier_activities[$i] ?></h2>
-					<?php echo "<button class='btn btn_default activity-submit' data-tier='$tier' data-number='$key' data-value='$hashed'>Finished</butonn>"; ?>
+					<?php echo "<button class='btn btn_default activity-submit' data-tier='$tier' data-number='$key' data-value='$hashed'>Finished</button>"; ?>
 				</div>
 	<?php
 					}
