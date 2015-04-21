@@ -1,5 +1,5 @@
 $(function() {
-	$("button").each(function(){
+	$(".form-style button").each(function(){
 		$(this).click(function(){
 			activity_data = {};
 			activity_data["tier"] = $(this).attr("data-tier");
